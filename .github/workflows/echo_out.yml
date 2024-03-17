@@ -3,7 +3,7 @@ on: workflow_dispatch
 #branch: master
 jobs:
   sample-job:
-    runs_on: ubuntu_latest
+    runs-on: ubuntu_latest
     steps:
       - name: print hello
         run: echo "hello"
