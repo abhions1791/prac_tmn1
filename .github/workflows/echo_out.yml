@@ -1,8 +1,21 @@
 name: Demo workflow
 on: workflow_dispatch
-#branch: master
 jobs:
   sample-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print hello
+        run: echo "hello"
+      - name: print again
+        run: echo "hello there"
+  sample-job-2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print hello
+        run: echo "hello"
+      - name: print again
+        run: echo "hello there"
+  sample-job-3:
     runs-on: ubuntu-latest
     steps:
       - name: print hello
